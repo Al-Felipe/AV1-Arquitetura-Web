@@ -47,7 +47,7 @@ public class NoticiaService {
 
     public String getRelease(){
         String dadosNoticia = "";
-        String apiURL = "https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia";
+        String apiURL = "https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=release";
 
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> responseEntity = restTemplate.getForEntity(apiURL, String.class);
